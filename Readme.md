@@ -1,16 +1,18 @@
-# art-module template
+# ART-PlaceholderAPI
 
-Use this template to quickstart your art-module development.
+[![Build Status](https://github.com/art-framework/art-placeholderapi/workflows/Build/badge.svg)](../../actions?query=workflow%3ABuild)
+[![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/art-framework/art-placeholderapi/?include_prereleases&label=release)](../../releases)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-Take a look at the [art-framework documentation](https://art-framework.io/#/developer/modules) for more details.
+This [art-framework](https://art-framework.io) module provides easy replacements for all placeholders of the [PlaceholderAPI](https://github.com/PlaceholderAPI/PlaceholderAPI/) in your art-configurations.
 
-## Template Setup
+Here is the exact example from the [PlaceholderAPI documentation](https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Hook-into-PlaceholderAPI#setting-placeholders-in-your-plugin) implemented in the art-framework.
 
-* Create a new Github project using this template.
-* Clone the new repository and open it in IntelliJ.
-* Update the gradle.properties file and change the following variables:
-    * group: your-maven-group-id (e.g.: io.github.silthus)
-* Update the root.projectName inside settings.gradle. This will be your artifactId.
-* Delete the CHANGELOG.md. It will be generated on your first release.
-* Rename the java package and module to match your project.
-* Code away :) - and once you are ready, push your commit (in conventional commit style) to master.
+The following art-script will broadcast the given message when a player joins the server and replaces the placeholders.
+
+```yaml
+art:
+  - '@player.join'
+  - '!broadcast "%player_name% &ajoined the server! They are rank &f%vault_rank%"'
+```
