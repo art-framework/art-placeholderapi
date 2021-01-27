@@ -6,7 +6,6 @@ buildscript {
 }
 
 plugins {
-    id 'com.github.johnrengelman.shadow' version '6.1.0'
     id 'java-library'
     id 'jacoco'
     id 'idea'
@@ -56,13 +55,6 @@ dependencies {
     testImplementation "org.mockito:mockito-core:3.+"
     testImplementation 'org.assertj:assertj-core:3.+'
 }
-
-shadowJar {
-    classifier = 'all'
-}
-
-tasks.build.dependsOn(shadowJar)
-tasks.publish.dependsOn(shadowJar)
 
 test {
     useJUnitPlatform()
