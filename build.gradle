@@ -47,7 +47,7 @@ repositories {
 dependencies {
     implementation spigot(mcVersion)
 
-    implementation 'io.art-framework.core:api:4.5.1'
+    implementation 'io.art-framework.core:api:4.5.4'
     implementation 'me.clip:placeholderapi:2.10.9'
 
     //Test dependencies
