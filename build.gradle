@@ -48,7 +48,7 @@ dependencies {
     implementation spigot(mcVersion)
 
     implementation 'io.art-framework.core:api:4.5.4'
-    implementation 'me.clip:placeholderapi:2.10.9'
+    implementation 'me.clip:placeholderapi:2.11.0'
 
     //Test dependencies
     testImplementation 'org.junit.jupiter:junit-jupiter:5.+'
