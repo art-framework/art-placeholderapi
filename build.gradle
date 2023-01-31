@@ -52,7 +52,7 @@ dependencies {
 
     //Test dependencies
     testImplementation 'org.junit.jupiter:junit-jupiter:5.+'
-    testImplementation "org.mockito:mockito-core:4.+"
+    testImplementation "org.mockito:mockito-core:5.+"
     testImplementation 'org.assertj:assertj-core:3.+'
 }
 
